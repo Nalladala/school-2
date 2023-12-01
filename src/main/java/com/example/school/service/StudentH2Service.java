@@ -38,10 +38,8 @@ public class StudentH2Service implements StudentRepository {
             db.update("insert into student(studentName,gender,standard) values (?,?,?)", eachStudent.getStudentName(),
                     eachStudent.getGender(), eachStudent.getStandard());
         }
-      
 
         String responseMessage = String.format("Successfully added %d students", studentList.size());
-      
 
         return responseMessage;
     }
